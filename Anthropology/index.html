@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Anthropology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" integrity="sha512-0/rEDduZGrqo4riUlwqyuHDQzp2D1ZCgH/gFIfjMIL5az8so6ZiXyhf1Rg8i6xsjv+z/Ubc4tt1thLigEcu6Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="container flex-grow-1 light-style container-p-y">
+    <div class="container-m-nx container-m-ny bg-lightest mb-3">
+        <ol class="breadcrumb text-big container-p-x py-3 m-0">
+            <li class="breadcrumb-item">
+                <a href="../">home</a>
+            </li>
+            <li class="breadcrumb-item active">Anthropology</li>
+        </ol>
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-default md-btn-flat dropdown-toggle px-2" data-toggle="dropdown"><i class="ion ion-ios-settings"></i></button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item" onclick="showSize()">Show size</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="file-manager-container file-manager-col-view">
+
+        <!-- <div class="file-item">
+            <div class="file-item-icon file-item-level-up fas fa-level-up-alt text-secondary"></div>
+            <a href="../" class="file-item-name">
+                ..
+            </a>
+        </div> -->
+
+        <!-- <div class="file-item">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-folder text-secondary"></div>
+            <a href="javascript:void(0)" class="file-item-name">
+                Images
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="javascript:void(0)">Download</a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/13/11/53/55/What_is_Anthropology.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                What is Anthropology.pdf <div class="file-size">( Size:  837.6 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/13/11/53/55/What_is_Anthropology.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/20/11/8/3/Social_Groups.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Social Groups.pdf <div class="file-size">( Size:  529.9 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/20/11/8/3/Social_Groups.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/22/12/9/12/Social_Groups_02.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Social Groups 02.pdf <div class="file-size">( Size:  559.7 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/22/12/9/12/Social_Groups_02.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/26/12/10/39/Black_Plague_and_Human_Immune_Genes.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Black Plague and Human Immune Genes.pdf <div class="file-size">( Size:  478.2 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/26/12/10/39/Black_Plague_and_Human_Immune_Genes.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/28/13/7/28/Society_and_Social_Institutions.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Society and Social Institutions.pdf <div class="file-size">( Size:  606.4 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/10/28/13/7/28/Society_and_Social_Institutions.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/2/10/47/13/Social_Stratification.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Social Stratification.pdf <div class="file-size">( Size:  726.8 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/2/10/47/13/Social_Stratification.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/2/10/48/9/Culture_and_Civilisation.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Culture and Civilisation.pdf <div class="file-size">( Size:  725.8 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/2/10/48/9/Culture_and_Civilisation.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/3/10/32/21/Total_Institutions_and_Resocialisation.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Total Institutions and Resocialisation.pdf <div class="file-size">( Size:  507.9 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/3/10/32/21/Total_Institutions_and_Resocialisation.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/3/15/28/24/Topical_Questions_in_Sociocultural_Anthropology.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Topical Questions in Sociocultural Anthropology.pdf <div class="file-size">( Size:  554.3 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/3/15/28/24/Topical_Questions_in_Sociocultural_Anthropology.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/12/10/59/39/Society_and_Culture.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Society and Culture.pdf <div class="file-size">( Size:  469.7 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/12/10/59/39/Society_and_Culture.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/14/12/41/35/Edmund_Leach_on_Marriage_Definition.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Edmund Leach on Marriage Definition.pdf <div class="file-size">( Size:  489.5 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/14/12/41/35/Edmund_Leach_on_Marriage_Definition.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/15/10/58/2/Ways_of_acquiring_mates_in_tribal_India.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Ways of acquiring mates in tribal India.pdf <div class="file-size">( Size:  503.4 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/15/10/58/2/Ways_of_acquiring_mates_in_tribal_India.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/15/10/59/32/Divorce_and_Separation.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Divorce and Separation.pdf <div class="file-size">( Size:  582.0 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/15/10/59/32/Divorce_and_Separation.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/16/12/31/42/Live-In_Relationships.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Live-In Relationships.pdf <div class="file-size">( Size:  513.3 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/16/12/31/42/Live-In_Relationships.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/16/12/33/56/Types_of_Polyandry.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Types of Polyandry.pdf <div class="file-size">( Size:  495.1 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/16/12/33/56/Types_of_Polyandry.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/18/10/41/53/Morgans_Classification_of_Family.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Morgan's Classification of Family.pdf <div class="file-size">( Size:  489.3 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/18/10/41/53/Morgans_Classification_of_Family.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/22/5/41/58/Matrilineal_Families.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Matrilineal Families.pdf <div class="file-size">( Size:  540.5 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/22/5/41/58/Matrilineal_Families.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/23/15/34/26/Kinship_Behavior.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Kinship Behavior.pdf <div class="file-size">( Size:  536.2 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/23/15/34/26/Kinship_Behavior.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/23/15/39/55/Human_Rights_and_Cultural_Relativism.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Human Rights and Cultural Relativism.pdf <div class="file-size">( Size:  509.7 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/23/15/39/55/Human_Rights_and_Cultural_Relativism.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/25/5/41/12/Status_and_Role.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Status and Role.pdf <div class="file-size">( Size:  543.2 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/25/5/41/12/Status_and_Role.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/27/9/39/2/Sapir-Whorf_Hypothesis.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Sapir-Whorf Hypothesis.pdf <div class="file-size">( Size:  527.2 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/27/9/39/2/Sapir-Whorf_Hypothesis.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/27/10/14/33/Language_and_Social_Inequality.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Language and Social Inequality.pdf <div class="file-size">( Size:  497.9 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/27/10/14/33/Language_and_Social_Inequality.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/30/10/43/44/Kula_and_Potlatch.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Kula and Potlatch.pdf <div class="file-size">( Size:  515.7 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/11/30/10/43/44/Kula_and_Potlatch.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/1/16/36/54/UNDRIP.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                UNDRIP.pdf <div class="file-size">( Size:  482.5 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/1/16/36/54/UNDRIP.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/2/13/10/25/Patoralism_and_Challenges.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Patoralism and Challenges.pdf <div class="file-size">( Size:  550.9 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/2/13/10/25/Patoralism_and_Challenges.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/2/13/12/41/Globalisation.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Globalisation.pdf <div class="file-size">( Size:  925.7 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/2/13/12/41/Globalisation.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/4/19/2/43/Pig_Culture_in_Malanesia.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Pig Culture in Malanesia.pdf <div class="file-size">( Size:  418.3 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/4/19/2/43/Pig_Culture_in_Malanesia.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/12/20/47/6/Bio_Events.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Bio Events.pdf <div class="file-size">( Size:  1.9 MB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/12/20/47/6/Bio_Events.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/13/16/29/37/Theories_of_Demography.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Theories of Demography.pdf <div class="file-size">( Size:  873.2 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/13/16/29/37/Theories_of_Demography.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/16/11/4/46/Demographic_Data.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Demographic Data.pdf <div class="file-size">( Size:  8.6 MB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/16/11/4/46/Demographic_Data.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/16/11/6/2/Deep_Ecology.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Deep Ecology.pdf <div class="file-size">( Size:  484.1 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/16/11/6/2/Deep_Ecology.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/22/20/38/58/Gender_Stratification_Class_Notes.pdf">
+            <a href="Biology%20Handout.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Gender Stratification Class Notes.pdf <div class="file-size">( Size:  500.4 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/22/20/38/58/Gender_Stratification_Class_Notes.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="file-item">
+            <a href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/22/20/40/2/Sorceror_Shaman_and_Medicine_Man.pdf" class="file-item-name">
+            <div class="file-item-select-bg bg-primary"></div>
+            <div class="file-item-icon far fa-file-pdf text-secondary"></div>
+                Sorceror, Shaman and Medicine Man.pdf <div class="file-size">( Size:  549.1 KB  )</div>
+            </a>
+            <div class="file-item-actions btn-group">
+                <button type="button" class="btn btn-default btn-sm rounded-pill icon-btn borderless md-btn-flat hide-arrow dropdown-toggle" data-toggle="dropdown"><i class="ion ion-ios-more"></i></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2022/12/22/20/40/2/Sorceror_Shaman_and_Medicine_Man.pdf" download>Download</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<style type="text/css">
+body{margin-top:20px;}
+.file-size {
+    display: none;
+}
+.file-manager-actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.file-manager-actions > * {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.file-manager-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.file-item {
+    position: relative;
+    z-index: 1;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.file-item:hover,
+.file-item.focused {
+    border-color: rgba(0, 0, 0, 0.05);
+}
+.file-item.focused {
+    z-index: 2;
+}
+.file-item * {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    text-decoration:none;
+}
+.dark-style .file-item:hover,
+.dark-style .file-item.focused {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.file-item-checkbox {
+    margin: 0 !important;
+}
+.file-item-select-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.file-item-img {
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+}
+.file-item-name {
+    display: block;
+    overflow: hidden;
+}
+.file-manager-col-view .file-item {
+    margin: 0 0.25rem 0.25rem 0;
+    padding: 1.25rem 0 1rem 0;
+    width: 9rem;
+    text-align: center;
+}
+[dir="rtl"] .file-manager-col-view .file-item {
+    margin-right: 0;
+    margin-left: 0.25rem;
+}
+.file-manager-col-view .file-item-img,
+.file-manager-col-view .file-item-icon {
+    display: block;
+    margin: 0 auto 0.75rem auto;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+.file-manager-col-view .file-item-level-up {
+    font-size: 1.5rem;
+}
+.file-manager-col-view .file-item-checkbox,
+.file-manager-col-view .file-item-actions {
+    position: absolute;
+    top: 6px;
+}
+.file-manager-col-view .file-item-checkbox {
+    left: 6px;
+}
+[dir="rtl"] .file-manager-col-view .file-item-checkbox {
+    right: 6px;
+    left: auto;
+}
+.file-manager-col-view .file-item-actions {
+    right: 6px;
+}
+[dir="rtl"] .file-manager-col-view .file-item-actions {
+    right: auto;
+    left: 6px;
+}
+.file-manager-col-view .file-item-name {
+    width: 100%;
+}
+.file-manager-col-view .file-manager-row-header,
+.file-manager-col-view .file-item-changed {
+    display: none;
+}
+.file-manager-row-view .file-manager-row-header,
+.file-manager-row-view .file-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0 0.125rem 0;
+    padding: 0.25rem 3rem 0.25rem 2.25em;
+    width: 100%;
+}
+[dir="rtl"] .file-manager-row-view .file-manager-row-header,
+[dir="rtl"] .file-manager-row-view .file-item {
+    padding-right: 2.25em;
+    padding-left: 3rem;
+}
+.file-manager-row-view .file-item-img,
+.file-manager-row-view .file-item-icon {
+    display: block;
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.file-manager-row-view .file-item-level-up {
+    font-size: 1rem;
+}
+.file-manager-row-view .file-item-checkbox,
+.file-manager-row-view .file-item-actions {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.file-manager-row-view .file-item-checkbox {
+    left: 10px;
+}
+[dir="rtl"] .file-manager-row-view .file-item-checkbox {
+    right: 10px;
+    left: auto;
+}
+.file-manager-row-view .file-item-actions {
+    right: 10px;
+}
+[dir="rtl"] .file-manager-row-view .file-item-actions {
+    right: auto;
+    left: 10px;
+}
+.file-manager-row-view .file-item-changed {
+    display: none;
+    margin-left: auto;
+    width: 10rem;
+}
+[dir="rtl"] .file-manager-row-view .file-item-changed {
+    margin-right: auto;
+    margin-left: 0;
+}
+.file-manager-row-view .file-item-name {
+    width: calc(100% - 4rem);
+}
+.file-manager-row-view .file-manager-row-header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+}
+.file-manager-row-view .file-manager-row-header .file-item-name {
+    margin-left: 4rem;
+}
+[dir="rtl"] .file-manager-row-view .file-manager-row-header .file-item-name {
+    margin-right: 4rem;
+    margin-left: 0;
+}
+.light-style .file-item-name {
+    color: #4e5155 !important;
+}
+.light-style .file-item.selected .file-item-select-bg {
+    opacity: 0.15;
+}
+.dropdown-item {
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .light-style .file-manager-row-view .file-item-changed {
+        display: block;
+    }
+    .light-style .file-manager-row-view .file-item-name {
+        width: calc(100% - 15rem);
+    }
+}
+@media (min-width: 992px) {
+    .light-style .file-manager-col-view .file-item-checkbox,
+    .light-style .file-manager-col-view .file-item-actions {
+        opacity: 0;
+    }
+    .light-style .file-manager-col-view .file-item:hover .file-item-checkbox,
+    .light-style .file-manager-col-view .file-item.focused .file-item-checkbox,
+    .light-style .file-manager-col-view .file-item.selected .file-item-checkbox,
+    .light-style .file-manager-col-view .file-item:hover .file-item-actions,
+    .light-style .file-manager-col-view .file-item.focused .file-item-actions,
+    .light-style .file-manager-col-view .file-item.selected .file-item-actions {
+        opacity: 1;
+    }
+}
+.material-style .file-item-name {
+    color: #4e5155 !important;
+}
+.material-style .file-item.selected .file-item-select-bg {
+    opacity: 0.15;
+}
+@media (min-width: 768px) {
+    .material-style .file-manager-row-view .file-item-changed {
+        display: block;
+    }
+    .material-style .file-manager-row-view .file-item-name {
+        width: calc(100% - 15rem);
+    }
+}
+@media (min-width: 992px) {
+    .material-style .file-manager-col-view .file-item-checkbox,
+    .material-style .file-manager-col-view .file-item-actions {
+        opacity: 0;
+    }
+    .material-style .file-manager-col-view .file-item:hover .file-item-checkbox,
+    .material-style .file-manager-col-view .file-item.focused .file-item-checkbox,
+    .material-style .file-manager-col-view .file-item.selected .file-item-checkbox,
+    .material-style .file-manager-col-view .file-item:hover .file-item-actions,
+    .material-style .file-manager-col-view .file-item.focused .file-item-actions,
+    .material-style .file-manager-col-view .file-item.selected .file-item-actions {
+        opacity: 1;
+    }
+}
+.dark-style .file-item-name {
+    color: #fff !important;
+}
+.dark-style .file-item.selected .file-item-select-bg {
+    opacity: 0.15;
+}
+@media (min-width: 768px) {
+    .dark-style .file-manager-row-view .file-item-changed {
+        display: block;
+    }
+    .dark-style .file-manager-row-view .file-item-name {
+        width: calc(100% - 15rem);
+    }
+}
+@media (min-width: 992px) {
+    .dark-style .file-manager-col-view .file-item-checkbox,
+    .dark-style .file-manager-col-view .file-item-actions {
+        opacity: 0;
+    }
+    .dark-style .file-manager-col-view .file-item:hover .file-item-checkbox,
+    .dark-style .file-manager-col-view .file-item.focused .file-item-checkbox,
+    .dark-style .file-manager-col-view .file-item.selected .file-item-checkbox,
+    .dark-style .file-manager-col-view .file-item:hover .file-item-actions,
+    .dark-style .file-manager-col-view .file-item.focused .file-item-actions,
+    .dark-style .file-manager-col-view .file-item.selected .file-item-actions {
+        opacity: 1;
+    }
+}
+
+</style>
+
+<script type="text/javascript">
+function showSize() {
+  let a = document.getElementsByClassName("file-size");
+  for (var i = 0; i < a.length; i++) {
+    a[i].style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>
